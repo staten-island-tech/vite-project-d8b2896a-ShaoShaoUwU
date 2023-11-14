@@ -1,2 +1,10 @@
-const skins = ["Cosmic", "dark Cosmic","Lunar","ras","elementalist",""];
+const Lux =[
+{
+    SkinName:"Spellthief Lux",
+    Price: "950RP",
+    MyOpinion:"2.5/10",
+    img:""
+}
+
+]
 
