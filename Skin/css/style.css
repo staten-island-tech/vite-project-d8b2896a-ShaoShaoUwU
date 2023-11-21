@@ -1,14 +1,96 @@
 :root{
-  --blue: #2998ef;
-  --orange: #ff7730;
-  --primary: var(--orange)
+  --pasblue: #9cd3fd;
+  --paspink: #f9bcff;
+  --primary: var(--paspink)
 }
 body{
   background-color: var(--primary);
 }
 .light{
-  --primary: var(--orange);
+  --primary: var(--paspink);
 }
 .dark{
-  --primary: var(--blue);
+  --primary: var(--pasblue);
+}
+body,
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+.Title{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C89B3C;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    font-family: 'Bad Script', cursive;
+    border: 10px solid #C8AA6E;
+    box-shadow: 10px 7px 10px #785A28;
+    
+}
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#gall {
+    width: 23%;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 10px solid #C8AA6E;
+    margin-bottom: 1.5rem;
+    padding: 3px;
+    background-color: #C89B3C;
+    box-shadow: 10px 7px 10px #785A28;
+}
+
+@media screen and (max-width: 1200px){
+    .card{
+        width: 44%;
+    }
+} 
+@media screen and (max-width: 844px){
+    .card{
+        width: 100%;
+    }
+}
+.img {
+    width: 70%;
+    height: 70%;
+    border: 10px solid #C8AA6E;
+    background-color: #C89B3C;
+}
+
+.SkinName {
+    font-size: 1.3rem;
+    font-family: 'Bad Script', cursive;
+    background-color: #C89B3C;
+    transition: all .3s;
+
+}
+
+.Price {
+    font-size: 1.1rem;
+    font-family: 'Bad Script', cursive;
+    background-color: #C89B3C;
+    transition: all .3s;
+
+}
+.MyOpinion {
+  font-size: 1.1rem;
+  font-family: 'Bad Script', cursive;
+  background-color: #C89B3C;
+  transition: all .3s;
+
 }
