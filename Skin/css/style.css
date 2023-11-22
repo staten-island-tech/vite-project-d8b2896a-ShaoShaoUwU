@@ -12,7 +12,7 @@ body{
 .dark{
   --primary: var(--pasblue);
 }
-body,
+/* body,
 html,
 * {
     box-sizing: border-box;
@@ -93,4 +93,4 @@ html,
   background-color: #C89B3C;
   transition: all .3s;
 
-}
+} */
