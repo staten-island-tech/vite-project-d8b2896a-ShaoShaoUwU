@@ -1,11 +1,7 @@
 import "../css/style.css";
-import {Lux} from "./skins.js";
+import { Lux } from "./skins.js";
 
 const DOMSelectors = {
-    ChampName: document.querySelector(".SkinName"),
-    ChampIMG: document.querySelector(".img"),
-    ChampPrice: document.querySelector(".Price"),
-    ChampOp: document.querySelector(".MyOpinion"),
     PasP: document.querySelector(".PPink"),
     PasB: document.querySelector(".PBlue"),
 };
@@ -13,16 +9,16 @@ Lux.forEach((Champ) => {
  DOMSelectors.gallery.insertAdjacentHTML(
         "beforeend",
         `<div id="gallery">
-            <h2 class="SkinName">${Champ.ChampName.value}</h2>
-            <img src="${Champ.ChampIMG.value}" alt="Champion Image" class="img"/>
-            <h3 class="Price">${Champ.ChampPrice.value}</h3>
-            <h3 class="MyOpinion">${Champ.ChampOP.value}</h3>
+            <h2 class="SkinName">${Champ.SkinName}</h2>
+            <img src="${Champ.img}" alt="Champion Image" class="img"/>
+            <h3 class="Price">${Champ.Price}</h3>
+            <h3 class="MyOpinion">${Champ.MyOpinion}</h3>
             <button>dies</button>
         </div>`
  )});
 
 
-function pas(){
+function Blue(){
 
 };
 DOMSelectors.form.addEventListener("click", function(event){

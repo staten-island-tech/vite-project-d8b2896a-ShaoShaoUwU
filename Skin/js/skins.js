@@ -61,4 +61,4 @@ const Lux =[
 },
 ]
 
-export {Lux}
+export { Lux }
