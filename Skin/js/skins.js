@@ -1,4 +1,4 @@
-const Lux =[
+const LuxSkins =[
 {
     SkinName:"Spellthief Lux",
     Price: "950RP",
@@ -61,4 +61,4 @@ const Lux =[
 },
 ]
 
-export { Lux }
+export { LuxSkins }

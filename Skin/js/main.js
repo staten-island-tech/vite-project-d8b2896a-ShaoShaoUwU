@@ -1,23 +1,25 @@
 import "../css/style.css";
-import { Lux } from "./skins.js";
+import { LuxSkins } from "./skins.js";
 
 const DOMSelectors = {
     PasP: document.querySelector(".PPink"),
     PasB: document.querySelector(".PBlue"),
 };
-Lux.forEach((Champ) => {
- DOMSelectors.gallery.insertAdjacentHTML(
-        "beforeend",
-        `<div id="gallery">
-            <h2 class="SkinName">${Champ.SkinName}</h2>
-            <img src="${Champ.img}" alt="Champion Image" class="img"/>
-            <h3 class="Price">${Champ.Price}</h3>
-            <h3 class="MyOpinion">${Champ.MyOpinion}</h3>
-            <button>dies</button>
-        </div>`
- )});
+function populate(arr){
+    arr.forEach((Lux) => {
+    gallery.insertAdjacentHTML(
+           "beforeend",
+           `<div id="gallery">
+               <h2 class="SkinName">${Lux.SkinName}</h2>
+               <img src="${Lux.img}" alt="Champion Image" class="img"/>
+               <h3 class="Price">${Lux.Price}</h3>
+               <h3 class="MyOpinion">${Lux.MyOpinion}</h3>
+               <button>dies</button>
+           </div>`
+    )});}
 
 
+populate(LuxSkins)
 function Blue(){
 
 };
