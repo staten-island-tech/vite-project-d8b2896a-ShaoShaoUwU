@@ -9,12 +9,11 @@ function populate(arr){
     arr.forEach((Lux) => {
     gallery.insertAdjacentHTML(
            "beforeend",
-           `<div id="gallery">
+           `<div id="gall">
                <h2 class="SkinName">${Lux.SkinName}</h2>
                <img src="${Lux.img}" alt="Champion Image" class="img"/>
                <h3 class="Price">${Lux.Price}</h3>
                <h3 class="MyOpinion">${Lux.MyOpinion}</h3>
-               <button>dies</button>
            </div>`
     )});}
 

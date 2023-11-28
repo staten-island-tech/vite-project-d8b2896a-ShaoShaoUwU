@@ -1,17 +1,4 @@
-:root{
-  --pasblue: #9cd3fd;
-  --paspink: #f9bcff;
-  --primary: var(--paspink)
-}
-body{
-  background-color: var(--primary);
-}
-.light{
-  --primary: var(--paspink);
-}
-.dark{
-  --primary: var(--pasblue);
-}
+
 body,
 html,
 * {
@@ -93,4 +80,14 @@ html,
   background-color: #C89B3C;
   transition: all .3s;
 
-} 
+}
+
+
+
+.Bleu{
+    --one: var(#283151);
+    --two: var(#607aa6);
+    --three: var(#94a7ce);
+    --four: var(#d2d0e7);
+    --five: var(#d2d0e7);
+}
