@@ -84,10 +84,17 @@ html,
 
 
 
-.Bleu{
+.PBlue{
     --one: var(#283151);
     --two: var(#607aa6);
     --three: var(#94a7ce);
     --four: var(#d2d0e7);
-    --five: var(#d2d0e7);
+    --five: var(hsl(248, 100%, 98%));
+}
+.PPink{
+    --one: var(#fb6f92);
+    --two: var(#ff8fab);
+    --three: var(#ffb3c6);
+    --four: var(#ffc2d1);
+    --five: var(#ffe5ec);
 }
