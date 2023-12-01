@@ -19,9 +19,7 @@ function populate(arr){
 
 
 populate(LuxSkins)
-function Blue(){
 
-};
 DOMSelectors.form.addEventListener("click", function(event){
 
 });

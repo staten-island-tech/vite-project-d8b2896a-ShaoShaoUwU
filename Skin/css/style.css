@@ -4,7 +4,9 @@ html,
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    background-color: -- var();
+}
 .Title{
     margin-top: 20px;
     margin-left: auto;
@@ -35,11 +37,11 @@ html,
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 10px solid #C8AA6E;
+    border: 10px solid var(--box-border);
     margin-bottom: 1.5rem;
     padding: 3px;
-    background-color: #C89B3C;
-    box-shadow: 10px 7px 10px #785A28;
+    background-color: var(--bgc);
+    box-shadow: 10px 7px 10px var(--box-shadow);
 }
 
 @media screen and (max-width: 1200px){
@@ -55,14 +57,14 @@ html,
 .img {
     width: 70%;
     height: 70%;
-    border: 10px solid #C8AA6E;
-    background-color: #C89B3C;
+    border: 10px solid var(--border-box);
+    background-color: var(--box-bgc);
 }
 
 .SkinName {
     font-size: 1.3rem;
     font-family: 'Bad Script', cursive;
-    background-color: #C89B3C;
+    background-color: var(--box-bgc);
     transition: all .3s;
 
 }
@@ -70,31 +72,38 @@ html,
 .Price {
     font-size: 1.1rem;
     font-family: 'Bad Script', cursive;
-    background-color: #C89B3C;
+    background-color: var(--box-bgc);
     transition: all .3s;
 
 }
 .MyOpinion {
   font-size: 1.1rem;
   font-family: 'Bad Script', cursive;
-  background-color: #C89B3C;
+  background-color: var(--box-bgc);
   transition: all .3s;
 
 }
 
 
+.root {
+    --primary: var(var(--box-bgc));
+    
+    --box-shadow: var(#785A28);
+    --box-bgc: var(#C89B3C);
+    --box-border: var(#C8AA6E);
+    --bgc: var(#F0E6D2);
 
-.PBlue{
-    --one: var(#283151);
-    --two: var(#607aa6);
-    --three: var(#94a7ce);
-    --four: var(#d2d0e7);
+    --blue-box-shadow: var(#283151);
+    --blue-box-bgc: var(#607aa6);
+    --blue-border: var(#94a7ce);
+    --blue-bgc: var(#d2d0e7);
     --five: var(hsl(248, 100%, 98%));
-}
-.PPink{
-    --one: var(#fb6f92);
-    --two: var(#ff8fab);
-    --three: var(#ffb3c6);
-    --four: var(#ffc2d1);
+
+
+    --pink-box-shadow: var(#fb6f92);
+    --pink-box-bgc: var(#ff8fab);
+    --blue-border: var(#ffb3c6);
+    --pink-bgc: var(#ffc2d1);
     --five: var(#ffe5ec);
+
 }
