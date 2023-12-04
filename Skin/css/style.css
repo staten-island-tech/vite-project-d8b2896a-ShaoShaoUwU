@@ -1,4 +1,47 @@
 
+
+:root {
+    
+    --WestCoast: var(#785A28); 
+    --Marigold: var(#C89B3C); 
+    --HarvestGold: var(#C8AA6E); 
+    --AlbescentWhite: var(#F0E6D2); 
+
+    --CloudBurst: var(#283151); /* shadow */
+    --WaikawaGray: var(#607aa6); /*box bgc */
+    --PoloBlue: var(#94a7ce); /*border */
+    --Snuff: var(#d2d0e7); /* bgc */
+    --BlueChalk: var(#E4E0ff);
+    --WildWatermelon: var(#fb6f92); /* shadow */
+    --TickleMePink: var(#ff8fab); /*box bgc */
+    --Lightpink: var(#ffb3c6); /*border */
+    --Pink: var(#ffc2d1); /* bgc */
+    --Remy: var(#ffe5ec);
+
+    --primary: var(--Marigold);
+    --secondary: var(--HarvestGold);
+    --tertiary: var(--AlbescentWhite);
+    --quaternary: var(--WestCoast);
+}
+
+.Pink{
+    --primary: var(--TickleMePink);
+    --secondary: var(--Lightpink);
+    --tertiary: var(--Pink);
+    --quaternary: var(--WildWatermelon);
+}
+.Blue{
+    --primary: var(--WaikawaGray);
+    --secondary: var(--PoloBlue);
+    --tertiary: var(--Snuff);
+    --quaternary: var(--CloudBurst);
+}
+.Original{
+    --primary: var(--Marigold);
+    --secondary: var(--HarvestGold);
+    --tertiary: var(--AlbescentWhite);
+    --quaternary: var(--WestCoast);
+}
 body,
 html,
 * {
@@ -69,45 +112,3 @@ html,
 }
 
 
-.root {
-    
-    --WestCoast: var(#785A28); 
-    --Marigold: var(#C89B3C); 
-    --HarvestGold: var(#C8AA6E); 
-    --AlbescentWhite: var(#F0E6D2); 
-
-    --CloudBurst: var(#283151); /* shadow */
-    --WaikawaGray: var(#607aa6); /*box bgc */
-    --PoloBlue: var(#94a7ce); /*border */
-    --Snuff: var(#d2d0e7); /* bgc */
-    --BlueChalk: var(#E4E0ff);
-    --WildWatermelon: var(#fb6f92); /* shadow */
-    --TickleMePink: var(#ff8fab); /*box bgc */
-    --Lightpink: var(#ffb3c6); /*border */
-    --Pink: var(#ffc2d1); /* bgc */
-    --Remy: var(#ffe5ec);
-
-    --primary: var(--Marigold);
-    --secondary: var(--HarvestGold);
-    --tertiary: var(--AlbescentWhite);
-    --quaternary: var(--WestCoast);
-}
-
-.Pink{
-    --primary: var(--TickleMePink);
-    --secondary: var(--Lightpink);
-    --tertiary: var(--Pink);
-    --quaternary: var(--WildWatermelon);
-}
-.Blue{
-    --primary: var(--WaikawaGray);
-    --secondary: var(--PoloBlue);
-    --tertiary: var(--Snuff);
-    --quaternary: var(--CloudBurst);
-}
-.Original{
-    --primary: var(--Marigold);
-    --secondary: var(--HarvestGold);
-    --tertiary: var(--AlbescentWhite);
-    --quaternary: var(--WestCoast);
-}
