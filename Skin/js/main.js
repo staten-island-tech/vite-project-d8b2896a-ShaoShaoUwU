@@ -16,13 +16,11 @@ function populate(arr) {
     );
 }
 
-
-
 function filters() {
     let buttons = document.querySelectorAll(".btn")
     buttons.forEach((btn) => btn.addEventListener("click", function () {
-        let category = btn.textContent.toLowerCase()
-        let newArr = LuxSkins.filter((Lux) => Lux.type.includes(category))
+        let rarity = btn.textContent.toLowerCase()
+        let newArr = LuxSkins.filter((Lux) => Lux.rank.includes(rarity))
         document.querySelector("#gallery").innerHTML = ""
         populate(newArr)
     }))

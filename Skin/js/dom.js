@@ -1,6 +1,6 @@
 const DOMselectors = {
-    Blue: document.querySelector(".PasBlue"),
-    Pink: document.querySelector(".PasPink"),
+    Blue: document.querySelector(".Blue"),
+    Pink: document.querySelector(".Pink"),
     Original: document.querySelector(".Original"),
     buttons: document.querySelectorAll(".btn"),  
     gallery: document.querySelector(".gallery"),

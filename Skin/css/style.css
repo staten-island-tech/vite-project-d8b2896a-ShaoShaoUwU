@@ -44,16 +44,6 @@ html,
     box-shadow: 10px 7px 10px var(--quaternary);
 }
 
-@media screen and (max-width: 1200px){
-    .card{
-        width: 44%;
-    }
-} 
-@media screen and (max-width: 844px){
-    .card{
-        width: 100%;
-    }
-}
 .img {
     width: 70%;
     height: 70%;
@@ -65,23 +55,17 @@ html,
     font-size: 1.3rem;
     font-family: 'Bad Script', cursive;
     background-color: var(--primary);
-    transition: all .3s;
-
 }
 
 .Price {
     font-size: 1.1rem;
     font-family: 'Bad Script', cursive;
     background-color: var(--primary);
-    transition: all .3s;
-
 }
 .MyOpinion {
   font-size: 1.1rem;
   font-family: 'Bad Script', cursive;
   background-color: var(--primary);
-  transition: all .3s;
-
 }
 
 
@@ -112,13 +96,13 @@ html,
 .Pink{
     --primary: var(--TickleMePink);
     --secondary: var(--Lightpink);
-    --teritiary: var(--Pink);
+    --tertiary: var(--Pink);
     --quaternary: var(--WildWatermelon);
 }
 .Blue{
     --primary: var(--WaikawaGray);
     --secondary: var(--PoloBlue);
-    --teritiary: var(--Snuff);
+    --tertiary: var(--Snuff);
     --quaternary: var(--CloudBurst);
 }
 .Original{
