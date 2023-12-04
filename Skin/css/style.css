@@ -5,13 +5,13 @@ html,
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: -- var();
+    background-color: var(--primary);
 }
 .Title{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #C89B3C;
+    background-color: var(--primary);
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -20,8 +20,8 @@ html,
     margin-bottom: 20px;
     justify-content: space-around;
     font-family: 'Bad Script', cursive;
-    border: 10px solid #C8AA6E;
-    box-shadow: 10px 7px 10px #785A28;
+    border: 10px solid var(--secondary);
+    box-shadow: 10px 7px 10px var(--quaternary);
     
 }
 #gallery {
@@ -37,11 +37,11 @@ html,
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border: 10px solid var(--box-border);
+    border: 10px solid var(--secondary);
     margin-bottom: 1.5rem;
     padding: 3px;
-    background-color: var(--bgc);
-    box-shadow: 10px 7px 10px var(--box-shadow);
+    background-color: var(--tertiary);
+    box-shadow: 10px 7px 10px var(--quaternary);
 }
 
 @media screen and (max-width: 1200px){
@@ -57,14 +57,14 @@ html,
 .img {
     width: 70%;
     height: 70%;
-    border: 10px solid var(--border-box);
-    background-color: var(--box-bgc);
+    border: 10px solid var(--secondary);
+    background-color: var(--primary);
 }
 
 .SkinName {
     font-size: 1.3rem;
     font-family: 'Bad Script', cursive;
-    background-color: var(--box-bgc);
+    background-color: var(--primary);
     transition: all .3s;
 
 }
@@ -72,38 +72,54 @@ html,
 .Price {
     font-size: 1.1rem;
     font-family: 'Bad Script', cursive;
-    background-color: var(--box-bgc);
+    background-color: var(--primary);
     transition: all .3s;
 
 }
 .MyOpinion {
   font-size: 1.1rem;
   font-family: 'Bad Script', cursive;
-  background-color: var(--box-bgc);
+  background-color: var(--primary);
   transition: all .3s;
 
 }
 
 
 .root {
-    --primary: var(var(--box-bgc));
     
-    --box-shadow: var(#785A28);
-    --box-bgc: var(#C89B3C);
-    --box-border: var(#C8AA6E);
-    --bgc: var(#F0E6D2);
+    --boxshadow: var(#785A28); /* shadow */
+    --boxbgc: var(#C89B3C); /*box bgc */
+    --boxborder: var(#C8AA6E); /*border */
+    --bgc: var(#F0E6D2); /* bgc */
 
-    --blue-box-shadow: var(#283151);
-    --blue-box-bgc: var(#607aa6);
-    --blue-border: var(#94a7ce);
-    --blue-bgc: var(#d2d0e7);
-    --five: var(hsl(248, 100%, 98%));
+    --CloudBurst: var(#283151); /* shadow */
+    --WaikawaGray: var(#607aa6); /*box bgc */
+    --PoloBlue: var(#94a7ce); /*border */
+    --Snuff: var(#d2d0e7); /* bgc */
+    --BlueChalk: var(#E4E0ff);
 
 
-    --pink-box-shadow: var(#fb6f92);
-    --pink-box-bgc: var(#ff8fab);
-    --blue-border: var(#ffb3c6);
-    --pink-bgc: var(#ffc2d1);
-    --five: var(#ffe5ec);
+    --WildWatermelon: var(#fb6f92); /* shadow */
+    --TickleMePink: var(#ff8fab); /*box bgc */
+    --Lightpink: var(#ffb3c6); /*border */
+    --Pink: var(#ffc2d1); /* bgc */
+    --Remy: var(#ffe5ec);
 
+    --primary: var(--boxbgc);
+    --secondary: var(--boxborder);
+    --tertiary: var(--bgc);
+    --quaternary: var(--boxshadow);
+}
+
+.Pink{
+    --primary: var(--TickleMePink);
+    --secondary: var(--Lightpink);
+    --teritiary: var(--Pink);
+    --quaternary: var(--WildWatermelon);
+}
+.Blue{
+    --primary: var(--WaikawaGray);
+    --secondary: var(--PoloBlue);
+    --teritiary: var(--Snuff);
+    --quaternary: var(--WildWatermelon);
 }

@@ -1,10 +1,14 @@
 import "../css/style.css";
 import { LuxSkins } from "./skins.js";
 
-const DOMSelectors = {
-    PasP: document.querySelector(".PPink"),
-    PasB: document.querySelector(".PBlue"),
-};
+document. querySelector ("#change-theme"). addEventListener ("click", function (){
+if (document.body.classlist.contains ("PasBlue")) {
+document.body.classlist.add ("PasPink"); document.body.classlist.remove ("PasBlue");}
+else {
+document.body.classlist.add ("PasBlue"); 
+document.body.classlist.remove("PasPink");
+}
+});
 function populate(arr){
     arr.forEach((Lux) => {
     gallery.insertAdjacentHTML(
@@ -29,8 +33,7 @@ function filters(){
         populate(newArr)    
     }))
 }
-
-
+filters()
 
 /* function remove(){
     let buttons = document.querySelectorAll("button")
