@@ -85,5 +85,5 @@ const LuxSkins =[
 },
 ]
 
-export { LuxSkins }
+export {LuxSkins}
 

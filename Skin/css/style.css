@@ -87,10 +87,10 @@ html,
 
 .root {
     
-    /* --WestCoast: var(#785A28);  shadow 
-    --Marigold: var(#C89B3C); box bgc
-    --HarvestGold: var(#C8AA6E); border 
-    --AlbescentWhite: var(#F0E6D2);  bgc  */
+    --WestCoast: var(#785A28); 
+    --Marigold: var(#C89B3C); 
+    --HarvestGold: var(#C8AA6E); 
+    --AlbescentWhite: var(#F0E6D2); 
 
     --CloudBurst: var(#283151); /* shadow */
     --WaikawaGray: var(#607aa6); /*box bgc */
@@ -103,10 +103,10 @@ html,
     --Pink: var(#ffc2d1); /* bgc */
     --Remy: var(#ffe5ec);
 
-    --primary: var(--TickleMePink);
-    --secondary: var(--Lightpink);
-    --tertiary: var(--Pink);
-    --quaternary: var(--WildWatermelon);
+    --primary: var(--Marigold);
+    --secondary: var(--HarvestGold);
+    --tertiary: var(--AlbescentWhite);
+    --quaternary: var(--WestCoast);
 }
 
 .Pink{
@@ -120,4 +120,10 @@ html,
     --secondary: var(--PoloBlue);
     --teritiary: var(--Snuff);
     --quaternary: var(--CloudBurst);
+}
+.Original{
+    --primary: var(--Marigold);
+    --secondary: var(--HarvestGold);
+    --tertiary: var(--AlbescentWhite);
+    --quaternary: var(--WestCoast);
 }
