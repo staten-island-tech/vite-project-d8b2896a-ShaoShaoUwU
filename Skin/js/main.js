@@ -1,19 +1,12 @@
 import "../css/style.css";
 import { LuxSkins } from "./skins.js";
+import { DOMselectors } from "./dom.js";
 
-document. querySelector ("#change-theme"). addEventListener ("click", function (){
-if (document.body.classlist.contains ("PasBlue")) {
-document.body.classlist.add ("PasPink"); document.body.classlist.remove ("PasBlue");}
-else {
-document.body.classlist.add ("PasBlue"); 
-document.body.classlist.remove("PasPink");
-}
-});
 function populate(arr){
     arr.forEach((Lux) => {
     gallery.insertAdjacentHTML(
            "beforeend",
-           `<div id="gall">
+           `<div class="gall">
                <h2 class="SkinName">${Lux.SkinName}</h2>
                <img src="${Lux.img}" alt="Champion Image" class="img"/>
                <h3 class="Price">${Lux.Price}</h3>
@@ -22,7 +15,6 @@ function populate(arr){
     )});}
 
 
-populate(LuxSkins)
 
 function filters(){
     let buttons = document.querySelectorAll(".btn")
@@ -33,7 +25,26 @@ function filters(){
         populate(newArr)    
     }))
 }
-filters()
+function changetheme(){ 
+DOMselectors.Blue.addEventListener("click", function(){
+    document.body.classList.add("Blue")
+    document.body.classList.remove("Original")
+    document.body.classList.remove("Pink")
+  })
+ DOMselectors.Pink.addEventListener("click", function(){
+    document.body.classList.add("Pink")
+    document.body.classList.remove("Original")
+    document.body.classList.remove("Blue")
+  })
+  DOMselectors.Original.addEventListener("click", function(){
+    document.body.classList.add("Original")
+    document.body.classList.remove("Pink")
+    document.body.classList.remove("Blue")
+  })}
+
+  populate(LuxSkins)
+  filters()
+  changetheme()
 
 /* function remove(){
     let buttons = document.querySelectorAll("button")

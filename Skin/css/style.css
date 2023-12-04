@@ -24,13 +24,13 @@ html,
     box-shadow: 10px 7px 10px var(--quaternary);
     
 }
-#gallery {
+.gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#gall {
+.gall {
     width: 23%;
     height: 31vh;
     display: flex;
@@ -87,28 +87,26 @@ html,
 
 .root {
     
-    --boxshadow: var(#785A28); /* shadow */
-    --boxbgc: var(#C89B3C); /*box bgc */
-    --boxborder: var(#C8AA6E); /*border */
-    --bgc: var(#F0E6D2); /* bgc */
+    /* --WestCoast: var(#785A28);  shadow 
+    --Marigold: var(#C89B3C); box bgc
+    --HarvestGold: var(#C8AA6E); border 
+    --AlbescentWhite: var(#F0E6D2);  bgc  */
 
     --CloudBurst: var(#283151); /* shadow */
     --WaikawaGray: var(#607aa6); /*box bgc */
     --PoloBlue: var(#94a7ce); /*border */
     --Snuff: var(#d2d0e7); /* bgc */
     --BlueChalk: var(#E4E0ff);
-
-
     --WildWatermelon: var(#fb6f92); /* shadow */
     --TickleMePink: var(#ff8fab); /*box bgc */
     --Lightpink: var(#ffb3c6); /*border */
     --Pink: var(#ffc2d1); /* bgc */
     --Remy: var(#ffe5ec);
 
-    --primary: var(--boxbgc);
-    --secondary: var(--boxborder);
-    --tertiary: var(--bgc);
-    --quaternary: var(--boxshadow);
+    --primary: var(--TickleMePink);
+    --secondary: var(--Lightpink);
+    --tertiary: var(--Pink);
+    --quaternary: var(--WildWatermelon);
 }
 
 .Pink{
@@ -121,5 +119,5 @@ html,
     --primary: var(--WaikawaGray);
     --secondary: var(--PoloBlue);
     --teritiary: var(--Snuff);
-    --quaternary: var(--WildWatermelon);
+    --quaternary: var(--CloudBurst);
 }
