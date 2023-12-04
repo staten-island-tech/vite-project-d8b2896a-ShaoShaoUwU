@@ -20,9 +20,16 @@ function populate(arr){
 
 populate(LuxSkins)
 
-DOMSelectors.form.addEventListener("click", function(event){
+function filters(){
+    let buttons = document.querySelectorAll(".btn")
+    buttons.forEach((btn)=> btns.addEventListener("click", function() {
+        let category = btn.textContent.toLowerCase()
+        let newArr = items.filter((el)=>el.type.includes(category))
+        document.querySelector("#gallery").innerHTML = ""
+        populate(newArr)    
+    }))
+}
 
-});
 
 
 /* function remove(){
