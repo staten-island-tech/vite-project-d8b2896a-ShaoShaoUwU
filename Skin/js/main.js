@@ -1,4 +1,4 @@
-import "../css/style.css";
+
 import {LuxSkins} from "./skins.js";
 import {DOMselectors} from "./dom.js";
 
@@ -21,7 +21,7 @@ function filters() {
     buttons.forEach((btn) => btn.addEventListener("click", function () {
         let rarity = btn.textContent.toLowerCase()
         let newArr = LuxSkins.filter((Lux) => Lux.rank.includes(rarity))
-        document.querySelector("#gallery").innerHTML = ""
+        document.querySelector(".gallery").innerHTML = ""
         populate(newArr)
     }))
 }

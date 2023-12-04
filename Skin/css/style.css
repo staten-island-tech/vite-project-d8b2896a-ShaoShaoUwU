@@ -2,21 +2,21 @@
 
 :root {
     
-    --WestCoast: var(#785A28); 
-    --Marigold: var(#C89B3C); 
-    --HarvestGold: var(#C8AA6E); 
-    --AlbescentWhite: var(#F0E6D2); 
+    --WestCoast: #785A28; 
+    --Marigold: #C89B3C; 
+    --HarvestGold: #C8AA6E; 
+    --AlbescentWhite: #F0E6D2; 
 
-    --CloudBurst: var(#283151); /* shadow */
-    --WaikawaGray: var(#607aa6); /*box bgc */
-    --PoloBlue: var(#94a7ce); /*border */
-    --Snuff: var(#d2d0e7); /* bgc */
-    --BlueChalk: var(#E4E0ff);
-    --WildWatermelon: var(#fb6f92); /* shadow */
-    --TickleMePink: var(#ff8fab); /*box bgc */
-    --Lightpink: var(#ffb3c6); /*border */
-    --Pink: var(#ffc2d1); /* bgc */
-    --Remy: var(#ffe5ec);
+    --CloudBurst: #283151; /* shadow */
+    --WaikawaGray: #607aa6; /*box bgc */
+    --PoloBlue: #94a7ce; /*border */
+    --Snuff: #d2d0e7; /* bgc */
+    --BlueChalk: #E4E0ff;
+    --WildWatermelon: #fb6f92; /* shadow */
+    --TickleMePink: #ff8fab; /*box bgc */
+    --Lightpink: #ffb3c6; /*border */
+    --Pink: #ffc2d1; /* bgc */
+    --Remy: #ffe5ec;
 
     --primary: var(--Marigold);
     --secondary: var(--HarvestGold);
@@ -42,13 +42,14 @@
     --tertiary: var(--AlbescentWhite);
     --quaternary: var(--WestCoast);
 }
+
 body,
 html,
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--primary);
+    background-color: var(--tertiary);
 }
 .Title{
     margin-top: 20px;
@@ -83,7 +84,7 @@ html,
     border: 10px solid var(--secondary);
     margin-bottom: 1.5rem;
     padding: 3px;
-    background-color: var(--tertiary);
+    background-color: var(--primary);
     box-shadow: 10px 7px 10px var(--quaternary);
 }
 
