@@ -1,6 +1,6 @@
 
-import {LuxSkins} from "./skins.js";
-import {DOMselectors} from "./dom.js";
+import { LuxSkins } from "./skins.js";
+import { DOMselectors } from "./dom.js";
 
 function populate(arr) {
     arr.forEach((Lux) =>
@@ -16,15 +16,7 @@ function populate(arr) {
     );
 }
 
-function filters() {
-    let buttons = document.querySelectorAll(".btn")
-    buttons.forEach((btn) => btn.addEventListener("click", function () {
-        let rarity = btn.textContent.toLowerCase()
-        let newArr = LuxSkins.filter((Lux) => Lux.rank.includes(rarity))
-        document.querySelector(".gallery").innerHTML = ""
-        populate(newArr)
-    }))
-}
+
 function changetheme() {
     DOMselectors.Blue.addEventListener("click", function () {
         document.body.classList.add("Blue")
@@ -42,10 +34,48 @@ function changetheme() {
         document.body.classList.remove("Blue")
     })
 }
+/* function filters() {
+    let buttons = document.querySelectorAll(".btn")
+    buttons.forEach((btn) => btn.addEventListener("click", function () {
+        let rarity = btn.textContent.toLowerCase()
+        let newArr = LuxSkins.filter((Lux) => Lux.rank.includes(rarity))
+        document.querySelector(".gallery").innerHTML = ""
+        populate(newArr)
+    }))
+} */
+function rare() {
+    document.querySelector("#Rare")
+    Rare.addEventListener("click", function () {
+        const rare = LuxSkins.filter((Lux) => Lux.rank.includes(rare))
+    })
+}
+function epic() {
+
+}
+function legendary() {
+
+}
+function mythic() {
+
+}
+function ultimate() {
+
+}
+function all() {
+
+}
 
 populate(LuxSkins)
-filters()
+/* filters() */
 changetheme()
+rare()
+epic()
+mythic()
+legendary()
+ultimate()
+all()
+
+
 
 /* function remove(){
     let buttons = document.querySelectorAll("button")
