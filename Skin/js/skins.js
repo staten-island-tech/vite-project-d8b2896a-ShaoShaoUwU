@@ -66,7 +66,7 @@ const LuxSkins =[
     SkinName:"Prestige Battle Academia Lux",
     Price: "200ME",
     MyOpinion:"My Opinion: 9.5/10",
-    img:"https://allskins.pro/wp-content/uploads/2022/10/Lux_PrestigeBattleAcademiaSkin-1.jpg",
+    img:"https://64.media.tumblr.com/e00878c364b6443df287276ad7d78ba9/d5d63bbce180df42-c7/s1280x1920/96a71a9675e702b1567ac1fa98fb8bc1506c4e65.jpg",
     rank:["mythic", "all"],
 },
 {

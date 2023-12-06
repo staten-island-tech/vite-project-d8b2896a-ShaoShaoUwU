@@ -1,21 +1,27 @@
-
-
 :root {
-    
-    --WestCoast: #785A28; 
-    --Marigold: #C89B3C; 
-    --HarvestGold: #C8AA6E; 
-    --AlbescentWhite: #F0E6D2; 
 
-    --CloudBurst: #283151; /* shadow */
-    --WaikawaGray: #607aa6; /*box bgc */
-    --PoloBlue: #94a7ce; /*border */
-    --Snuff: #d2d0e7; /* bgc */
+    --WestCoast: #785A28;
+    --Marigold: #C89B3C;
+    --HarvestGold: #C8AA6E;
+    --AlbescentWhite: #F0E6D2;
+
+    --CloudBurst: #283151;
+    /* shadow */
+    --WaikawaGray: #607aa6;
+    /*box bgc */
+    --PoloBlue: #94a7ce;
+    /*border */
+    --Snuff: #d2d0e7;
+    /* bgc */
     --BlueChalk: #E4E0ff;
-    --WildWatermelon: #fb6f92; /* shadow */
-    --TickleMePink: #ff8fab; /*box bgc */
-    --Lightpink: #ffb3c6; /*border */
-    --Pink: #ffc2d1; /* bgc */
+    --WildWatermelon: #fb6f92;
+    /* shadow */
+    --TickleMePink: #ff8fab;
+    /*box bgc */
+    --Lightpink: #ffb3c6;
+    /*border */
+    --Pink: #ffc2d1;
+    /* bgc */
     --Remy: #ffe5ec;
 
     --primary: var(--Marigold);
@@ -24,19 +30,21 @@
     --quaternary: var(--WestCoast);
 }
 
-.Pink{
+.Pink {
     --primary: var(--TickleMePink);
     --secondary: var(--Lightpink);
     --tertiary: var(--Pink);
     --quaternary: var(--WildWatermelon);
 }
-.Blue{
+
+.Blue {
     --primary: var(--WaikawaGray);
     --secondary: var(--PoloBlue);
     --tertiary: var(--Snuff);
     --quaternary: var(--CloudBurst);
 }
-.Original{
+
+.Original {
     --primary: var(--Marigold);
     --secondary: var(--HarvestGold);
     --tertiary: var(--AlbescentWhite);
@@ -51,23 +59,25 @@ html,
     padding: 0;
     background-color: var(--tertiary);
 }
-.Title{
+
+.Title {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     background-color: var(--primary);
     font-size: 3rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 50%;
-    margin-bottom: 20px;
     justify-content: space-around;
     font-family: 'Bad Script', cursive;
     border: 10px solid var(--secondary);
     box-shadow: 10px 7px 10px var(--quaternary);
-    
+
 }
+
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -106,10 +116,53 @@ html,
     font-family: 'Bad Script', cursive;
     background-color: var(--primary);
 }
+
 .MyOpinion {
-  font-size: 1.1rem;
-  font-family: 'Bad Script', cursive;
-  background-color: var(--primary);
+    font-size: 1.1rem;
+    font-family: 'Bad Script', cursive;
+    background-color: var(--primary);
 }
 
 
+.btn {
+    font-size: 1.1rem;
+    font-family: 'Bad Script', cursive;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    width: 10%;
+    border: 10px solid var(--secondary);
+    box-shadow: 10px 7px 10px var(--quaternary)
+    
+}
+
+#button {
+    font-size: 1.1rem;
+    font-family: 'Bad Script', cursive;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    width: 10%;
+    border: 10px solid var(--secondary);
+    box-shadow: 10px 7px 10px var(--quaternary)
+    
+}
+.themes{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.filters{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
