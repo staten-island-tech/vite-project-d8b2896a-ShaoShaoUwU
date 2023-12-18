@@ -106,19 +106,19 @@ html,
 }
 
 .SkinName {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Bad Script', cursive;
     background-color: var(--primary);
 }
 
 .Price {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Bad Script', cursive;
     background-color: var(--primary);
 }
 
 .MyOpinion {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Bad Script', cursive;
     background-color: var(--primary);
 }
